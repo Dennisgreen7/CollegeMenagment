@@ -53,5 +53,21 @@ namespace CollegeManagment
         {
 
         }
+
+        private void payementsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            Payment uc = new Payment();
+            uc.Dock = DockStyle.Fill;
+            this.Controls.Add(uc);
+        }
+
+        private void newCourseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            CoursesActions uc = new CoursesActions();
+            uc.Dock = DockStyle.Fill;
+            this.Controls.Add(uc);
+        }
     }
 }

@@ -85,5 +85,13 @@ namespace CollegeManagment
             }
             MessageBox.Show("Courses Deleted");
         }
+
+        private void payementsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            Payment uc = new Payment();
+            uc.Dock = DockStyle.Fill;
+            this.Controls.Add(uc);
+        }
     }
 }
